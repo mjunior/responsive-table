@@ -1,0 +1,48 @@
+$bg: #0288D1;
+$destaque: #FF4081;
+$font: 'Roboto', sans-serif;
+@import 'grid';
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+body{
+	background-color: $bg;
+	font-family: $font;
+}
+
+
+h2{
+	color:#fff;
+	text-align:center;
+	font-family: 'Oleo Script', cursive;
+	font-size:46px;
+	font-weight:300;
+}
+
+.table{
+	.row{
+		background: #f6f6f6;
+		border-bottom:1px solid #ccc;
+		&:nth-of-type(odd){
+		    background: #e9e9e9;
+		}
+		&.header{
+			padding-top:15px;
+			color:#fff;
+			font-weight:800;
+			background-color:$destaque
+		}
+
+		.col{
+			&.cell{
+				padding-top:15px;
+				white-space: nowrap;
+			  	overflow: hidden;
+			  	text-overflow: ellipsis;
+			}
+		}
+	}
+}
+
+
+@import 'responsive'

@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  margin: auto;
+  margin-top: 30px;
+  padding: 0 15px;
+  max-width: 1000px; }
+  .container:before, .container:after {
+    display: table;
+    content: " ";
+    clear: both; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row:before, .row:after {
+    display: table;
+    content: " ";
+    clear: both; }
+
+.col {
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 20px; }
+
+.c1 {
+  width: 8.333%; }
+
+.c2 {
+  width: 16.6666%; }
+
+.c3 {
+  width: 25%; }
+
+.c4 {
+  width: 33.333%; }
+
+.c6 {
+  width: 50%; }
+
+.c8 {
+  width: 66.6666%; }
+
+.c12 {
+  width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .m1 {
+    width: 8.333%; }
+
+  .m2 {
+    width: 16.6666%; }
+
+  .m3 {
+    width: 25%; }
+
+  .m4 {
+    width: 33.333%; }
+
+  .m5 {
+    width: 41.66668%; }
+
+  .m6 {
+    width: 50%; }
+
+  .m8 {
+    width: 66.6666%; }
+
+  .m12 {
+    width: 100%; } }
+@media screen and (max-width: 490px) {
+  .s1 {
+    width: 8.333%; }
+
+  .s2 {
+    width: 16.6666%; }
+
+  .s3 {
+    width: 25%; }
+
+  .s4 {
+    width: 33.333%; }
+
+  .s5 {
+    width: 41.66668%; }
+
+  .s6 {
+    width: 50%; }
+
+  .s8 {
+    width: 66.6666%; }
+
+  .s10 {
+    width: 83.33333%; }
+
+  .s12 {
+    width: 100%; } }
+body {
+  background-color: #0288D1;
+  font-family: "Roboto", sans-serif; }
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+  font-size: 46px;
+  font-weight: 300; }
+
+.table .row {
+  background: #f6f6f6;
+  border-bottom: 1px solid #ccc; }
+  .table .row:nth-of-type(odd) {
+    background: #e9e9e9; }
+  .table .row.header {
+    padding-top: 15px;
+    color: #fff;
+    font-weight: 800;
+    background-color: #FF4081; }
+  .table .row .col.cell {
+    padding-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+@media screen and (max-width: 768px) {
+  .table .row {
+    padding-top: 15px; }
+    .table .row.header {
+      display: none; }
+    .table .row .col.cell span:before {
+      color: #FF4081;
+      font-weight: 400;
+      font-size: 13px;
+      display: block;
+      content: attr(data-titulo);
+      margin-top: -14px; } }
+@media screen and (max-width: 490px) {
+  h2 {
+    font-size: 34px; } }
+
+/*# sourceMappingURL=style.css.map */

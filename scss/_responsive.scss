@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+	.table{
+		.row{
+			padding-top:15px;
+			&.header{
+				display:none;
+			}
+			.col{
+				&.cell{
+					span{
+						&:before{
+							color:$destaque;
+							font-weight:400;
+							font-size:13px;
+							display:block;
+							content: attr(data-titulo);
+							margin-top:-14px;
+						}
+						
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 490px) {
+	h2{
+		font-size:34px;
+	}
+}
+
