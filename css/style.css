@@ -113,19 +113,22 @@ h2 {
 
 .table .row {
   background: #f6f6f6;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #ccc;
+  transition: background 0.3s; }
   .table .row:nth-of-type(odd) {
     background: #e9e9e9; }
   .table .row.header {
     padding-top: 15px;
     color: #fff;
     font-weight: 800;
-    background-color: #FF4081; }
+    background-color: #FF4081 !important; }
   .table .row .col.cell {
     padding-top: 15px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+  .table .row:hover {
+    background: #ccc; }
 
 @media screen and (max-width: 768px) {
   .table .row {
